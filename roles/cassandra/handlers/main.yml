@@ -1,0 +1,9 @@
+---
+# handlers file for cassandra
+- name: restart cassandra
+  command: /etc/init.d/cassandra restart
+#  Service seems to fail running locally
+#  service: name=casandra state=restarted
+
+- name: yum clean
+  command: /usr/bin/yum clean all -y

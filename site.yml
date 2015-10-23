@@ -1,0 +1,7 @@
+- hosts: cassandra
+  sudo: yes
+  roles:
+    - {
+        role: cassandra
+      }
+

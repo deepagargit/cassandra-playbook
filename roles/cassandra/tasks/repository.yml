@@ -1,0 +1,5 @@
+---
+- name: Copy Cassandra datastax repo file
+  template: src=datastax.repo dest=/etc/yum.repos.d/
+  notify:
+    - yum clean

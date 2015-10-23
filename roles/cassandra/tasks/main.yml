@@ -1,0 +1,6 @@
+---
+# tasks file for cassandra
+
+- include: dependencies.yml
+- include: repository.yml
+- include: cassandra.yml
